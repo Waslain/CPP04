@@ -6,7 +6,7 @@
 /*   By: fduzant <fduzant@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:07:45 by fduzant           #+#    #+#             */
-/*   Updated: 2023/11/21 17:13:34 by fduzant          ###   ########.fr       */
+/*   Updated: 2023/11/29 11:40:15 by fduzant          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,32 +19,32 @@
 int main()
 {
 	std::cout << "Constructing" << std::endl;
-	const Animal	*meta = new Animal();
+	const Animal	*animal = new Animal();
 	std::cout << std::endl;
 	std::cout << "Testing" << std::endl;
 
-	std::cout << "Animal _type: " << meta->getType() << std::endl;
-	meta->makeSound();
+	std::cout << "Animal _type: " << animal->getType() << std::endl;
+	animal->makeSound();
 	std::cout << std::endl;
 
 	std::cout << "Deconstructing" << std::endl;
-	delete meta;
+	delete animal;
 	std::cout << std::endl;
 
 	std::cout << "-------------------------------------------------------" << std::endl;
 
 	std::cout << std::endl;
 	std::cout << "Constructing" << std::endl;
-	const Animal	*catto = new Cat();
+	const Animal	*kitty = new Cat();
 	std::cout << std::endl;
 
 	std::cout << "Testing" << std::endl;
-	std::cout << "Cat _type: " << catto->getType() << std::endl;
-	catto->makeSound();
+	std::cout << "Cat _type: " << kitty->getType() << std::endl;
+	kitty->makeSound();
 	std::cout << std::endl;
 
 	std::cout << "Deconstructing" << std::endl;
-	delete catto;
+	delete kitty;
 	std::cout << std::endl;
 
 	std::cout << "-------------------------------------------------------" << std::endl;
@@ -65,31 +65,31 @@ int main()
 
 	std::cout << std::endl;
 	std::cout << "Constructing" << std::endl;
-	const WrongAnimal	*wrong_meta = new WrongAnimal();
+	const WrongAnimal	*wrong_animal = new WrongAnimal();
 	std::cout << std::endl;
 
 	std::cout << "Testing" << std::endl;
-	std::cout << "Animal _type: " << wrong_meta->getType() << std::endl;
-	wrong_meta->makeSound();
+	std::cout << "Animal _type: " << wrong_animal->getType() << std::endl;
+	wrong_animal->makeSound();
 	std::cout << std::endl;
 
 	std::cout << "Deconstructing" << std::endl;
-	delete wrong_meta;
+	delete wrong_animal;
 	std::cout << std::endl;
 
 	std::cout << "-------------------------------------------------------" << std::endl;
 
 	std::cout << "Constructing" << std::endl;
-	const WrongAnimal	*wrong_catto = new WrongCat();
+	const WrongAnimal	*wrong_kitty = new WrongCat();
 	std::cout << std::endl;
 
 	std::cout << "Testing" << std::endl;
-	std::cout << "WrongCat _type: " << wrong_catto->getType() <<std::endl;
-	wrong_catto->makeSound();
+	std::cout << "WrongCat _type: " << wrong_kitty->getType() <<std::endl;
+	wrong_kitty->makeSound();
 	std::cout << std::endl;
 
 	std::cout << "Deconstructing" << std::endl;
-	delete wrong_catto;
+	delete wrong_kitty;
 	std::cout << std::endl;
 
 	std::cout << "-------------------------------------------------------" << std::endl;
