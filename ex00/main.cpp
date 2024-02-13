@@ -6,7 +6,7 @@
 /*   By: fduzant <fduzant@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:07:45 by fduzant           #+#    #+#             */
-/*   Updated: 2023/11/29 11:40:15 by fduzant          ###   ########.fr       */
+/*   Updated: 2024/02/10 15:30:42 by fduzant          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,16 +95,16 @@ int main()
 	std::cout << "-------------------------------------------------------" << std::endl;
 
 	std::cout << "Constructing" << std::endl;
-	const WrongCat	*wrong_catta = new WrongCat();
+	const WrongCat	*wrong_cat = new WrongCat();
 	std::cout << std::endl;
 
 	std::cout << "Testing" << std::endl;
-	std::cout << "WrongCat _type: " << wrong_catta->getType() <<std::endl;
-	wrong_catta->makeSound();
+	std::cout << "WrongCat _type: " << wrong_cat->getType() <<std::endl;
+	wrong_cat->makeSound();
 	std::cout << std::endl;
 
 	std::cout << "Deconstructing" << std::endl;
-	delete wrong_catta;
+	delete wrong_cat;
 	std::cout << std::endl;
 
 	return (0);
